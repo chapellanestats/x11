@@ -87,7 +87,7 @@ nav{
     body{
         overflow-x: hidden;
     }
-    h1, h2, p{
+    h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
         margin-left: 20px;
     }
     nav{
