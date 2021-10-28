@@ -33,38 +33,96 @@ table.dataframe th{
 table.dataframe tr:nth-of-type(even){
     background-color: #f3f3f3;
 }
-nav{
+  a,
+  button {
+    font-family: "Poppins", sans-serif;
+  }
+  nav{
     min-height: 10vh;
     background-color: #5D4954;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 .logo{
     color: rgb(226, 226, 226);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
-    z-index: 2;
+    z-index: 9999;
 }
-.nav-links{
-    display: flex;
+  .dropdown {
+    height: 10vh;
     width: 50%;
+    margin: auto;
+    display: flex;
     justify-content: space-around;
-}
-.nav-links li{
+    align-items: center;
+  }
+  .players,
+  .teams {
+    position: relative; 
+  }  
+  .players ul,
+  .teams ul {
+    margin-top: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background: rgb(197, 173, 181);
+    left: 0px;
     list-style: none;
-}
-.nav-links a{
-    color: rgb(226, 226, 226);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+  }
+  .players li,
+  .teams li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 10px 20px;
+    white-space: nowrap;
+    font-size: 16px; 
+    text-transform: uppercase;
+  }
+  .players li:hover,
+  .teams li:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  
+  .players a,
+  .teams a {
+    color: black;
     text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 16px;
-}
-.burger{
+  }
+  .dropdown button,
+  .home {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: rgb(226, 226, 226);
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .players button:focus + ul,
+  .teams button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+  }
+  .burger{
     display: none;
     cursor: pointer;
 }
@@ -76,68 +134,86 @@ nav{
     margin: 5px;
     transition: all 0.3s ease;
 }
+@media screen and (min-width: 901px) {
+  .logo{
+    margin: auto;
+  }
+}
 
 @media screen and (max-width: 1024px){
-    .nav-links{
-        width: 60%;
-    }
+  .dropdown{
+      width: 60%;
+  }
 }
-
 @media screen and (max-width: 900px){
-    body{
-        overflow-x: hidden;
-    }
-    h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
-        margin-left: 20px;
-    }
-    nav{
-        position: relative;
-    }
-    .nav-links{
-        position: fixed;
-        height: 40vh;
-        right: 0px;
-        top: 8vh;
-        width: 100%;
-        background-color: #5D4954;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: translateY(-100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-        z-index: 2;
-    }
+  body{
+      overflow-x: hidden;
+      
+  }
+  h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
+      margin-left: 20px;
+  }
+  nav{
+      position: relative;
+  }
+  .dropdown{
+    position: absolute;
+    height: 40vh;
+    right: 0px;
+    top: 5vh;
+    width: 100%;
+    background-color: #5D4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in;
+  }
+  .dropdown button{
+    opacity: 0;
+  }
+  .players, .teams{
+    width: 100%;
+    text-align: center;
+  }
+  .players ul, .teams ul{
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    justify-content: center; 
+  }
+  .players li, .teams li{
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+  .burger{
+      display: block;
+      z-index: 2;
+  }
 }
-
 .nav-active{
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
-
 @keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
 }
 
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+  transform: rotate(-45deg) translate(-5px,6px);
 
 }
 .toggle .line2{
-    opacity: 0;
+  opacity: 0;
 }
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);    
+  transform: rotate(45deg) translate(-5px,-6px);    
 }
-
