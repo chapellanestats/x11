@@ -33,11 +33,11 @@ table.dataframe th{
 table.dataframe tr:nth-of-type(even){
     background-color: #f3f3f3;
 }
-  a,
-  button {
+a,
+button {
     font-family: "Poppins", sans-serif;
-  }
-  nav{
+}
+nav{
     min-height: 10vh;
     background-color: #5D4954;
     font-family: 'Poppins', sans-serif;
@@ -52,20 +52,20 @@ table.dataframe tr:nth-of-type(even){
     font-size: 20px;
     z-index: 9999;
 }
-  .dropdown {
+.dropdown {
     height: 10vh;
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  .players,
-  .teams {
+}
+.players,
+.teams {
     position: relative; 
-  }  
-  .players ul,
-  .teams ul {
+}  
+.players ul,
+.teams ul {
     margin-top: 15px;
     position: absolute;
     display: flex;
@@ -84,8 +84,8 @@ table.dataframe tr:nth-of-type(even){
     transform: translateY(-10px);
     transition: all 0.4s ease;
   }
-  .players li,
-  .teams li {
+.players li,
+.teams li {
     width: 100%;
     height: 100%;
     display: flex;
@@ -96,18 +96,18 @@ table.dataframe tr:nth-of-type(even){
     font-size: 16px; 
     text-transform: uppercase;
   }
-  .players li:hover,
-  .teams li:hover {
+.players li:hover,
+.teams li:hover {
     background-color: rgb(230, 230, 230);
-  }
+}
   
-  .players a,
-  .teams a {
+.players a,
+.teams a {
     color: black;
     text-decoration: none;
+    pointer-events: all;
   }
-  .dropdown button,
-  .home {
+.dropdown button, .home {
     background: none;
     text-decoration: none;
     border: none;
@@ -115,14 +115,14 @@ table.dataframe tr:nth-of-type(even){
     font-size: 20px;
     cursor: pointer;
     text-transform: uppercase;
-  }
-  .players button:focus + ul,
-  .teams button:focus + ul {
+}
+.players button:focus + ul,
+.teams button:focus + ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
   }
-  .burger{
+.burger{
     display: none;
     cursor: pointer;
 }
