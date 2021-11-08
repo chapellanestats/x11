@@ -72,6 +72,7 @@ nav{
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     width: auto;
     height: auto;
     background: rgb(197, 173, 181);
@@ -122,6 +123,9 @@ nav{
     pointer-events: all;
     transform: translateY(0px);
   }
+.mobile-only{
+  display: none;
+}
 .burger{
     display: none;
     cursor: pointer;
@@ -156,6 +160,7 @@ nav{
   nav{
       position: relative;
   }
+  
   .dropdown{
     position: absolute;
     height: 40vh;
@@ -176,17 +181,26 @@ nav{
   .players, .teams{
     width: 100%;
     text-align: center;
+    
+  }
+  .logo{
+    position: relative
   }
   .players ul, .teams ul{
     z-index: 1000;
     display: block;
     width: 100%;
-    justify-content: center; 
+    justify-content: center;
+  
+    
   }
   .players li, .teams li{
     display: block;
     width: 100%;
     justify-content: center;
+    z-index: 1000;
+    
+  
   }
   .burger{
       display: block;
