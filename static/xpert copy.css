@@ -166,7 +166,8 @@ img{
 }
 nav{
     position: relative;
-}
+    
+  }
 .dropdown{
   display: none;
 }

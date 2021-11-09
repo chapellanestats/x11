@@ -44,6 +44,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 .logo{
     color: rgb(226, 226, 226);
@@ -130,7 +131,6 @@ nav{
     display: none;
     cursor: pointer;
 }
-
 .burger div{
     width: 25px;
     height: 3px;
@@ -158,8 +158,8 @@ nav{
       margin-left: 20px;
   }
   nav{
-      position: relative;
-  }
+      position: relative
+    }
   
   .dropdown{
     position: absolute;
@@ -177,6 +177,7 @@ nav{
   }
   .dropdown button{
     opacity: 0;
+
   }
   .players, .teams{
     width: 100%;
@@ -191,17 +192,29 @@ nav{
     display: block;
     width: 100%;
     justify-content: center;
-  
-    
+    pointer-events: all;
   }
   .players li, .teams li{
     display: block;
     width: 100%;
     justify-content: center;
     z-index: 1000;
-    
-  
+    pointer-events: all;
   }
+  .players a, .teams a{
+    display: inline-block;
+    visibility: hidden;
+    pointer-events: all;
+  }
+  .players button:focus + ul li,
+  .teams button:focus + ul li{
+    opacity: 1;
+    pointer-events: all;
+    display: inline-block;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+
   .burger{
       display: block;
       z-index: 2;
