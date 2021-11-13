@@ -151,6 +151,9 @@ nav ul ul a:active{
 li>a:only-child:after {
   content: '';
 }
+.section .img{
+  margin-left: 100px;
+}
 /* Media Queries
 --------------------------------------------- */
 @media all and (min-width: 200px) and (max-width: 300px) {
@@ -179,6 +182,9 @@ li>a:only-child:after {
   p{font-size: 14px; font-family: 'Poppins', sans-serif}
   body{font-size: 14px; font-family: 'Poppins', sans-serif}
 
+  .section .img{
+    margin-left: 20px;
+  }
   nav {
     margin: 0;
   }
@@ -355,6 +361,9 @@ li>a:only-child:after {
   p{font-size: 14px; font-family: 'Poppins', sans-serif}
   body{font-size: 14px; font-family: 'Poppins', sans-serif}
   
+  .section .img{
+    margin-left: 20px;
+  }
   
   #logo{
     padding: 0 20px;
@@ -544,6 +553,10 @@ li>a:only-child:after {
   h2{font-size: 16px; font-family: 'Poppins', sans-serif}
   p{font-size: 14px; font-family: 'Poppins', sans-serif}
   body{font-size: 14px; font-family: 'Poppins', sans-serif}
+
+  .section .img{
+    margin-left: 40px;
+  }
 
   nav {
     margin: 0;
