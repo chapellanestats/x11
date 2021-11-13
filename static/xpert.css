@@ -152,9 +152,7 @@ nav ul ul a:active{
 li>a:only-child:after {
   content: '';
 }
-.section .img{
-  margin-left: 100px;
-}
+
 /* Media Queries
 --------------------------------------------- */
 @media all and (min-width: 200px) and (max-width: 300px) {
