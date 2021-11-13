@@ -16,7 +16,7 @@ a, h1, h2       { color: #000000; }
 h1              { border-bottom: 2px solid #eee; font-size: 20px; margin-top: 80px; margin-left: 100px;}
 h2              { font-size: 20px; font-weight: 500; margin-top: 80px; margin-left: 100px;}
 p               {font-size: 18px; font-weight: 500; margin-top: 20px; margin-left: 100px;}
-img             {margin-top: 60px; margin-left: 40px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
+img             {margin-top: 60px; margin-left: 0px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
 
 table.dataframe, .dataframe th, .dataframe td, .dataframe tr {
   border: none;
@@ -152,7 +152,6 @@ nav ul ul a:active{
 li>a:only-child:after {
   content: '';
 }
-
 /* Media Queries
 --------------------------------------------- */
 @media all and (min-width: 200px) and (max-width: 300px) {
@@ -180,7 +179,7 @@ li>a:only-child:after {
   h2{font-size: 16px; font-family: 'Poppins', sans-serif}
   p{font-size: 14px; font-family: 'Poppins', sans-serif}
   body{font-size: 14px; font-family: 'Poppins', sans-serif}
-  img{margin-top: 20px; margin-left: 0px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
+  img{margin-top: 60px; margin-left: 0px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
 
   nav {
     margin: 0;
@@ -547,7 +546,7 @@ li>a:only-child:after {
   h2{font-size: 16px; font-family: 'Poppins', sans-serif}
   p{font-size: 14px; font-family: 'Poppins', sans-serif}
   body{font-size: 14px; font-family: 'Poppins', sans-serif}
-  img{margin-top: 20px; margin-left: 20px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
+  img{margin-top: 20px; margin-left: 0px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
 
   nav {
     margin: 0;
