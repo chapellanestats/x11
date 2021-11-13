@@ -1,229 +1,732 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
 header{
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0px;
+  background-color: #5D4954;
 }
-body            { font-family: 'Poppins', sans-serif; font-size: 14px;}
+
+body            { font-family: 'Poppins', sans-serif; font-size: 16px;}
 a, h1, h2       { color: #000000; }
-h1              { border-bottom: 2px solid #eee; font-size: 24px; margin-top: 80px; margin-left: 100px;}
-h2              { font-size: 24px; font-weight: 500; margin-top: 80px; margin-left: 100px;}
+h1              { border-bottom: 2px solid #eee; font-size: 20px; margin-top: 80px; margin-left: 100px;}
+h2              { font-size: 20px; font-weight: 500; margin-top: 80px; margin-left: 100px;}
 p               {font-size: 18px; font-weight: 500; margin-top: 20px; margin-left: 100px;}
 
-
 table.dataframe, .dataframe th, .dataframe td, .dataframe tr {
-    border: none;
-    border-bottom: 1px solid #C8C8C8;
-    border-collapse: collapse;
-    text-align:left;
-    padding: 10px 20px;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    margin-left: 100px;
-    
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-left: 100px;
 }
+
 table.dataframe th{
-    background-color: #5D4954;
-    color: rgb(226, 226, 226);    
+  background-color: #5D4954;
+  color: rgb(226, 226, 226);    
 }
 table.dataframe tr:nth-of-type(even){
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
-a,
-button {
-    font-family: "Poppins", sans-serif;
-}
-nav{
-    min-height: 10vh;
-    background-color: #5D4954;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-.logo{
-    color: rgb(226, 226, 226);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-    z-index: 9999;
-}
-.dropdown {
-    height: 10vh;
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.players,
-.teams {
-    position: relative; 
-}  
-.players ul,
-.teams ul {
-    margin-top: 15px;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: auto;
-    height: auto;
-    background: rgb(197, 173, 181);
-    left: 0px;
-    list-style: none;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: all 0.4s ease;
-  }
-.players li,
-.teams li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    padding: 10px 20px;
-    white-space: nowrap;
-    font-size: 16px; 
-    text-transform: uppercase;
-  }
-.players li:hover,
-.teams li:hover {
-    background-color: rgb(230, 230, 230);
-}
-  
-.players a,
-.teams a {
-    color: black;
-    text-decoration: none;
-    pointer-events: all;
-  }
-.dropdown button, .home {
-    background: none;
-    text-decoration: none;
-    border: none;
-    color: rgb(226, 226, 226);
-    font-size: 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-.players button:focus + ul,
-.teams button:focus + ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(0px);
-  }
-.mobile-only{
+
+  .toggle,
+[id^=drop] {
   display: none;
 }
-.burger{
-    display: none;
-    cursor: pointer;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: rgb(226, 226, 226);
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-@media screen and (min-width: 901px) {
-  .logo{
-    margin: auto;
-  }
+
+nav {
+  height: 106px;
+  background-color: #5D4954;
+  font-family: 'Poppins', sans-serif;
+  width: 95%;
 }
 
-@media screen and (max-width: 1024px){
-  .dropdown{
-      width: 60%;
-  }
+#logo {
+  display: block;
+  color: rgb(226, 226, 226);
+  padding: 0 100px;
+  float: left;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 100px;
+  align-items: center;
 }
-@media screen and (max-width: 900px){
-  body{
-      overflow-x: hidden;
-      
+
+nav ul {
+  float: right;
+  padding: 20px 60px;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+}
+
+.home{
+  background-color: #5D4954;
+}
+
+nav a {
+  display: block;
+  padding: 0 20px;
+  color: rgb(226, 226, 226);
+  font-size: 18px;
+  line-height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+}
+nav ul li .first a{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+nav ul li .last a{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+nav ul .first:hover{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+nav ul .last:hover{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav ul li ul li:hover {
+  background: rgb(197, 173, 181); 
+}
+
+nav ul li ul li .toggle,
+nav ul ul a {
+    background: rgb(120, 93, 108);
+    white-space: nowrap;
+  }
+
+nav ul li ul li:hover>a {
+    background: rgb(197, 173, 181);
+    text-overflow: none;
+  }  
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 70px;
+}
+
+nav ul li:hover>ul {
+  display: inherit;
+}
+nav ul ul li {
+  width: auto;
+  float: none;
+  display: list-item;
+  position: relative;
+  left: -50px;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 170px;
+ 
+}
+nav ul ul a:active{
+  font-size: 20px;
+}
+
+li>a:only-child:after {
+  content: '';
+}
+/* Media Queries
+--------------------------------------------- */
+@media all and (min-width: 200px) and (max-width: 300px) {
+  #logo{
+    padding: 0 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  #main-toggle {
+    cursor: pointer;
+    float: right;
+    padding: 40px 10px;
+    margin-right: 10px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    position: relative;
+    user-select: none;
   }
   h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
-      margin-left: 20px;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif
   }
-  nav{
-      position: relative
-    }
-  
-  .dropdown{
-    position: absolute;
-    height: 40vh;
-    right: 0px;
-    top: 5vh;
-    width: 100%;
-    background-color: #5D4954;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease-in;
-  }
-  .dropdown button{
-    opacity: 0;
+  h1{font-size: 18px; font-family: 'Poppins', sans-serif}
+  h2{font-size: 16px; font-family: 'Poppins', sans-serif}
+  p{font-size: 14px; font-family: 'Poppins', sans-serif}
+  body{font-size: 14px; font-family: 'Poppins', sans-serif}
 
+  nav {
+    margin: 0;
   }
-  .players, .teams{
+
+  nav ul{
+    float:none;
+  }
+
+  .nav-icon {
+    background-color: rgb(226, 226, 226);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 22px;
+  }
+  
+  .nav-icon:before,
+  .nav-icon:after {
+    background-color: rgb(226, 226, 226);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
     width: 100%;
-    text-align: center;
+  }
+  
+  .nav-icon:before {
+    top: 5px;
+  }
+  
+  .nav-icon:after {
+    top: -5px;
+  }
+  
+  nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+
+  .home{
+    padding: 10px 40px;
+  }
+
+  .toggle {
+    display: block;
+    background-color: #5D4954;
+    padding: 10px 40px;
+    color: rgb(226, 226, 226);
+    font-size: 18px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  [id^=drop]:checked+ul {
+    display: block;
+  }
+
+  [id^=drop]:checked+#main-toggle+ul{
+    display: block;
+  }
+  
+  nav .drop:checked ~ #main-toggle .nav-icon{
+    background: #5D4954;
+  }
+
+  nav .drop:checked ~ #main-toggle .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all 0.3s ease;
+  } 
+
+  nav .drop:checked ~ #main-toggle .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li {
+    display: block;
+    width: 105%;
+    background-color: #5D4954;
+  }  
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 50px;
+    font-size: 18px;
+  }
+  
+  nav ul ul a:active{
+    font-size: 20px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 50px; 
+  }
+
+  nav ul ul ul a {
+    background: rgb(120, 93, 108);
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background: rgb(120, 93, 108);
+  }
+  
+  nav ul ul, .home {
+    float: none;
+    position: static;
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+  }
+
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+
+  nav ul li ul li:hover>a {
+    background: rgb(197, 173, 181);
+  }  
+
+  nav ul ul li {
+    display: block;
+    width: 100%;
+    left: 0;
+  }
+
+  nav ul ul ul li {
+    position: static;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+  nav ul li .first a{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  nav ul li .last a{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     
   }
-  .logo{
-    position: relative
+  nav ul .first:hover{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
-  .players ul, .teams ul{
-    z-index: 1000;
-    display: block;
-    width: 100%;
-    justify-content: center;
-    pointer-events: all;
+  nav ul .last:hover{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
-  .players li, .teams li{
-    display: block;
-    width: 100%;
-    justify-content: center;
-    z-index: 1000;
-    pointer-events: all;
+}
+
+@media all and (min-width: 300px) and (max-width: 500px) {
+  h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
+    margin-left: 20px;
   }
-  .players a, .teams a{
-    display: inline-block;
-    visibility: hidden;
-    pointer-events: all;
+  h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif
   }
-  .players button:focus + ul li,
-  .teams button:focus + ul li{
-    opacity: 1;
-    pointer-events: all;
-    display: inline-block;
-    visibility: visible;
-    transform: translateY(0px);
+  h1{font-size: 18px; font-family: 'Poppins', sans-serif}
+  h2{font-size: 16px; font-family: 'Poppins', sans-serif}
+  p{font-size: 14px; font-family: 'Poppins', sans-serif}
+  body{font-size: 14px; font-family: 'Poppins', sans-serif}
+  
+  
+  #logo{
+    padding: 0 20px;
+    font-size: 18px;
   }
 
-  .burger{
-      display: block;
-      z-index: 2;
+  #main-toggle {
+    cursor: pointer;
+    float: right;
+    padding: 40px 10px;
+    margin-right: 10px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    position: relative;
+    user-select: none;
   }
+  nav {
+    margin: 0;
+  }
+
+  nav ul{
+    float:none;
+  }
+
+  .nav-icon {
+    background-color: rgb(226, 226, 226);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 22px;
+  }
+  
+  .nav-icon:before,
+  .nav-icon:after {
+    background-color: rgb(226, 226, 226);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .nav-icon:before {
+    top: 5px;
+  }
+  
+  .nav-icon:after {
+    top: -5px;
+  }
+  
+  nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+
+  .home{
+    padding: 10px 40px;
+  }
+
+  .toggle {
+    display: block;
+    background-color: #5D4954;
+    padding: 10px 40px;
+    color: rgb(226, 226, 226);
+    font-size: 18px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  [id^=drop]:checked+ul {
+    display: block;
+  }
+
+  [id^=drop]:checked+#main-toggle+ul{
+    display: block;
+  }
+  
+  nav .drop:checked ~ #main-toggle .nav-icon{
+    background: #5D4954;
+  }
+
+  nav .drop:checked ~ #main-toggle .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all 0.3s ease;
+  } 
+
+  nav .drop:checked ~ #main-toggle .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li {
+    display: block;
+    width: 105%;
+    background-color: #5D4954;
+  }  
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+    font-size: 18px;
+  }
+  
+  nav ul ul a:active{
+    font-size: 20px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 50px; 
+  }
+
+  nav ul ul ul a {
+    background: rgb(120, 93, 108);
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background: rgb(120, 93, 108);
+  }
+  
+  nav ul ul, .home {
+    float: none;
+    position: static;
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+  }
+
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+
+  nav ul li ul li:hover>a {
+    background: rgb(197, 173, 181);
+  }  
+
+  nav ul ul li {
+    display: block;
+    width: 100%;
+    left: 0;
+  }
+
+  nav ul ul ul li {
+    position: static;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+  nav ul li .first a{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  nav ul li .last a{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+  }
+  nav ul .first:hover{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  nav ul .last:hover{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+
+@media all and (min-width : 500px) and (max-width : 900px) {
+  h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif
+  }
+  h1{font-size: 18px; font-family: 'Poppins', sans-serif}
+  h2{font-size: 16px; font-family: 'Poppins', sans-serif}
+  p{font-size: 14px; font-family: 'Poppins', sans-serif}
+  body{font-size: 14px; font-family: 'Poppins', sans-serif}
+
+  nav {
+    margin: 0;
+  }
+
+  nav ul{
+    float:none;
+  }
+  #logo{
+    padding: 0 40px;
+    font-size: 20px;
+  }
+
+  #main-toggle {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+    margin-right: 40px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    position: relative;
+    user-select: none;
+  }
+
+  .nav-icon {
+    background-color: rgb(226, 226, 226);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 22px;
+  }
+  
+  .nav-icon:before,
+  .nav-icon:after {
+    background-color: rgb(226, 226, 226);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .nav-icon:before {
+    top: 5px;
+  }
+  
+  .nav-icon:after {
+    top: -5px;
+  }
+  
+  nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+
+  .home{
+    padding: 10px 60px;
+  }
+
+  .toggle {
+    display: block;
+    background-color: #5D4954;
+    padding: 10px 60px;
+    color: rgb(226, 226, 226);
+    font-size: 18px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  [id^=drop]:checked+ul {
+    display: block;
+  }
+
+  [id^=drop]:checked+#main-toggle+ul{
+    display: block;
+  }
+  
+  nav .drop:checked ~ #main-toggle .nav-icon{
+    background: #5D4954;
+  }
+
+  nav .drop:checked ~ #main-toggle .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all 0.3s ease;
+  } 
+
+  nav .drop:checked ~ #main-toggle .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li {
+    display: block;
+    width: 105%;
+    background-color: #5D4954;
+  }  
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 70px;
+    font-size: 18px;
+  }
+  
+  nav ul ul a:active{
+    font-size: 20px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px; 
+  }
+
+  nav ul ul ul a {
+    background: rgb(120, 93, 108);
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background: rgb(120, 93, 108);
+  }
+  
+  nav ul ul, .home {
+    float: none;
+    position: static;
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+  }
+
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+
+  nav ul li ul li:hover>a {
+    background: rgb(197, 173, 181);
+  }  
+
+  nav ul ul li {
+    display: block;
+    width: 100%;
+    left: 0;
+  }
+
+  nav ul ul ul li {
+    position: static;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+  nav ul li .first a{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  nav ul li .last a{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+  }
+  nav ul .first:hover{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  nav ul .last:hover{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+ 
 }
 .nav-active{
   transform: translateX(0%);
-}
-@keyframes navLinkFade{
+  }
+  @keyframes navLinkFade{
   from{
       opacity: 0;
       transform: translateX(50px);
@@ -232,15 +735,4 @@ nav{
       opacity: 1;
       transform: translateX(0px);
   }
-}
-
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5px,6px);
-
-}
-.toggle .line2{
-  opacity: 0;
-}
-.toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);    
 }

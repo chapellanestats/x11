@@ -7,56 +7,45 @@
     <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="static/xpert copy.css">
+    <link rel="stylesheet" type="text/css" href="static/xpert.css">
     <title>Chap el Lane Stats</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <h4>Chap el Lane</h4>
-            </div>
-            <div class="dropdown">
-              <button><a href="/x11/" class="home">Home</a></button>
-              <div class="players">
-                <button>Players</button>
-                <ul>
-                  <li><a href="Goals">Goals</a></li>
-                  <li><a href="Assists">Assists</a></li>
-                  <li><a href="Overperformers">Overperformers</a></li>
-                  <li><a href="Best Rated">Best Rated</a></li>
-                </ul>
-              </div>
-              <div class="teams">
-                <button>Teams</button>
-                <ul>
-                  <li><a href="Attacking">Attacking</a></li>
-                  <li><a href="Scoring Means">Ways of Scoring</a></li>
-                  <li><a href="Squads">Squads</a></li>
-                  <li><a href="Team Ratings">Team Ratings</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="burger">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>
-            <div class="mobile">
-              <ul>
-                <li><a href="/x11/">Home</a></li>
-                <li><a href="Goals">Goals</a></li>
-                <li><a href="Assists">Assists</a></li>
-                <li><a href="Overperformers">Overperformers</a></li>
-                <li><a href="Best Rated">Best Rated</a></li>
-                <li><a href="Attacking">Attacking</a></li>
-                <li><a href="Scoring Means">Ways of Scoring</a></li>
-                <li><a href="Squads">Squads</a></li>
-                <li><a href="Team Ratings">Team Ratings</a></li>
-              </ul>
-            </div>
-        </nav>
+      <nav>
+        <div id="logo">Chap el Lane</div>
+        
+        <input type="checkbox" class="drop" id="drop">
+        <label for="drop" class="toggle" id='main-toggle'><span class="nav-icon"></span></label>
+        <ul class="menu">
+          <li><a href="/x11/" class="home">Home</a></li>  
+          <li> 
+            <!-- First Tier Drop Down -->
+            <label for="drop-1" class="toggle">Players▾</label>
+            <a href="#" class="players">Players▾</a>
+            <input type="checkbox" id="drop-1">
+            <ul id="nav-links">
+              <li class="first"><a href="Goals.html">Goals</a></li>
+              <li><a href="Assists">Assists</a></li>
+              <li><a href="Overperformers">Overperformers</a></li>
+              <li class="last"><a href="Best Rated">Best Rated</a></li>
+            </ul>
+          </li>
+          <li> 
+            <!-- First Tier Drop Down -->
+            <label for="drop-2" class="toggle">Teams▾</label>
+            <a href="#" class="teams">Teams▾</a>
+            <input type="checkbox" id="drop-2">
+            <ul>
+              <li class="first"><a href="Attacking">Attacking</a></li>
+              <li><a href="Scoring Means">Ways of Scoring</a></li>
+              <li><a href="Squads">Squads</a></li>
+              <li class="last"><a href="Team Ratings">Team Ratings</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <body>
         <section class="header">
@@ -187,6 +176,6 @@
             </section>
     </body>
 
-    <script src="static/test.js"></script>
+    <script src="static/xpert.js"></script>
 </body>
 </html>
