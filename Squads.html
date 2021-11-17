@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/xpert.css">
+    <title>Chap el Lane Stats</title>
+</head>
+
+<body>
+    <header>
+      <nav>
+        <div id="logo">Chap el Lane</div>
+        
+        <input type="checkbox" class="drop" id="drop">
+        <label for="drop" class="toggle" id='main-toggle'><span class="nav-icon"></span></label>
+        <ul class="menu">
+          <li><a href="/x11/" class="home">Home</a></li>  
+          <li> 
+            <!-- First Tier Drop Down -->
+            <label for="drop-1" class="toggle">Players▾</label>
+            <a href="#" class="players">Players▾</a>
+            <input type="checkbox" id="drop-1">
+            <ul id="nav-links">
+              <li class="first"><a href="Goals">Goals</a></li>
+              <li><a href="Assists">Assists</a></li>
+              <li><a href="Overperformers">Overperformers</a></li>
+              <li class="last"><a href="Best Rated">Best Rated</a></li>
+            </ul>
+          </li>
+          <li> 
+            <!-- First Tier Drop Down -->
+            <label for="drop-2" class="toggle">Teams▾</label>
+            <a href="#" class="teams">Teams▾</a>
+            <input type="checkbox" id="drop-2">
+            <ul>
+              <li class="first"><a href="Attacking">Attacking</a></li>
+              <li><a href="Scoring Means">Ways of Scoring</a></li>
+              <li><a href="Squads">Squads</a></li>
+              <li class="last"><a href="Team Ratings">Team Ratings</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+        <section class="header">
+            <div class="container">
+                <h1>Players in Teams</h1>
+            </div>
+            <p>The below graph shows a comparison between The Forgotten FC's squad vs The Remainder Of The League</p>
+        </section>
+            <section class="section">
+                <div class="image">
+                    <img src=static/Images/scatterplayers.png alt="output">
+                </div>
+                <div class="image">
+                  <img src=static/Images/scatterleague.png alt="output">
+                </div>
+            </section>
+    </body>
+    <script src="static/xpert.js"></script>
+</body>
+</html>
