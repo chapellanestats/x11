@@ -15,7 +15,7 @@ body            { font-family: 'Poppins', sans-serif; font-size: 16px;}
 a, h1, h2       { color: #000000; }
 h1              { border-bottom: 2px solid #eee; font-size: 20px; margin-top: 80px; margin-left: 100px;}
 h2              { font-size: 20px; font-weight: 500; margin-top: 80px; margin-left: 100px;}
-p               {font-size: 18px; font-weight: 500; margin-top: 20px; margin-left: 100px;}
+p               {font-size: 18px; font-weight: 500; margin-top: 30px; margin-left: 100px;}
 img             {margin-top: 60px; margin-left: 40px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
 
 table.dataframe, .dataframe th, .dataframe td, .dataframe tr {
@@ -24,8 +24,8 @@ table.dataframe, .dataframe th, .dataframe td, .dataframe tr {
   border-collapse: collapse;
   text-align:left;
   padding: 10px 20px;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 90px;
   margin-left: 100px;
 }
 
