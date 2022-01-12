@@ -153,6 +153,11 @@ li>a:only-child:after {
   content: '';
 }
 
+#meal {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
 /* Media Queries
 --------------------------------------------- */
 @media all and (min-width: 200px) and (max-width: 300px) {
