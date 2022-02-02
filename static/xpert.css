@@ -18,7 +18,7 @@ h2              { font-size: 20px; font-weight: 500; margin-top: 80px; margin-le
 p               {font-size: 18px; font-weight: 500; margin-top: 30px; margin-left: 100px;}
 img             {margin-top: 60px; margin-left: 80px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
 
-table.dataframe, .dataframe th, .dataframe td, .dataframe tr {
+table, table th, table tr, table td, table.dataframe, .dataframe th, .dataframe td, .dataframe tr {
   border: none;
   border-bottom: 1px solid #C8C8C8;
   border-collapse: collapse;
@@ -28,12 +28,19 @@ table.dataframe, .dataframe th, .dataframe td, .dataframe tr {
   margin-bottom: 90px;
   margin-left: 100px;
 }
+table img {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 1px;
+  margin-top: 5px;
 
-table.dataframe th{
+}
+
+table tr th, table.dataframe th{
   background-color: #5D4954;
   color: rgb(226, 226, 226);    
 }
-table.dataframe tr:nth-of-type(even){
+table tr tr,table.dataframe tr:nth-of-type(even){
   background-color: #f3f3f3;
 }
 
