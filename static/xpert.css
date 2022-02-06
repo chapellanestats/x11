@@ -23,17 +23,34 @@ table, table th, table tr, table td, table.dataframe, .dataframe th, .dataframe 
   border-bottom: 1px solid #C8C8C8;
   border-collapse: collapse;
   text-align:left;
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin-top: 50px;
   margin-bottom: 90px;
   margin-left: 100px;
+  font-size: 14px;
+  
 }
-table img {
+.dfdata, .dfdata th, .dfdata tr, .dfdata td{
+  z-index: -10;
+}
+table tr td{
+  white-space: nowrap;
+
+}
+table td{
+  position: relative;
+  white-space: nowrap;
+}
+#sq{
+  min-width: 90px;
+}
+table td img {
   white-space: nowrap;
   overflow: hidden;
-  margin-left: 1px;
-  margin-top: 5px;
-
+  font-size: 0;
+  margin-top: 0px;
+  margin-left: 0px;
+  float: left;  
 }
 
 table tr th, table.dataframe th{
@@ -54,8 +71,11 @@ nav {
   background-color: #5D4954;
   font-family: 'Poppins', sans-serif;
   width: 95%;
-}
 
+}
+nav, #logo, nav ul{
+  z-index: 1000;
+}
 #logo {
   display: block;
   color: rgb(226, 226, 226);
@@ -194,6 +214,19 @@ li>a:only-child:after {
   body{font-size: 14px; font-family: 'Poppins', sans-serif}
   img{margin-top: 60px; margin-left: 0px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
 
+  table img {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: left;
+    display: block;
+    max-width: 100%; height: auto; width: auto\9; /* ie8 */
+  }
+  #sq{
+    min-width: 90px;
+  }
   nav {
     margin: 0;
   }
@@ -358,7 +391,7 @@ li>a:only-child:after {
 }
 
 @media all and (min-width: 300px) and (max-width: 500px) {
-  h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
+  h1, h2, p, table, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
     margin-left: 20px;
   }
   h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
@@ -371,6 +404,19 @@ li>a:only-child:after {
   body{font-size: 14px; font-family: 'Poppins', sans-serif}
   img{margin-top: 20px; margin-left: 0px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
   
+  table img {
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 0;
+      margin-top: 0px;
+      margin-left: 0px;
+      float: left;
+      display: block;
+      max-width: 100%; height: auto; width: auto\9; /* ie8 */
+  }
+  #sq{
+    min-width: 90px;
+  }
   #logo{
     padding: 0 20px;
     font-size: 18px;
@@ -551,7 +597,7 @@ li>a:only-child:after {
 
 
 @media all and (min-width : 500px) and (max-width : 1024px) {
-  h1, h2, p, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
+  h1, h2, p, table, table.dataframe, .dataframe th, .dataframe td, .dataframe tr{
     margin-left: 40px;
     font-family: 'Poppins', sans-serif
   }
@@ -561,6 +607,19 @@ li>a:only-child:after {
   body{font-size: 14px; font-family: 'Poppins', sans-serif}
   img{margin-top: 20px; margin-left: 0px; max-width: 100%; height: auto; width: auto\9; /* ie8 */}
 
+  table img{
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: left;
+    display: block;
+    max-width: 100%; height: auto; width: auto\9; /* ie8 */
+    }
+  #sq{
+      min-width: 90px;
+  }
   nav {
     margin: 0;
   }
