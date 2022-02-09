@@ -28,7 +28,7 @@ table, table th, table tr, table td, table.dataframe, .dataframe th, .dataframe 
   margin-bottom: 90px;
   margin-left: 100px;
   font-size: 14px;
-  
+  z-index: -10
 }
 .dfdata, .dfdata th, .dfdata tr, .dfdata td{
   z-index: -10;
