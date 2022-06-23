@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/xpert.css">
+    <title>Chap el Lane Stats</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4WJHRE4ZC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q4WJHRE4ZC');
+    </script>
+</head>
+
+<body>
+    <header>
+      <nav>
+        <div> 
+          <a href="/x11/" id="logo">Chap el Lane</a>
+        </div>
+        
+        <input type="checkbox" class="drop" id="drop">
+        <label for="drop" class="toggle" id='main-toggle'><span class="nav-icon"></span></label>
+        <ul class="menu">
+          <li><a href="/x11/" class="home">Home</a></li>  
+          <li> 
+            <!-- First Tier Drop Down -->
+            <label for="drop-1" class="toggle">Players▾</label>
+            <a href="#" class="players">Players▾</a>
+            <input type="checkbox" id="drop-1">
+            <ul id="nav-links">
+              <li class="first"><a href="Goals">Goals</a></li>
+              <li><a href="Assists">Assists</a></li>
+              <li><a href="Defence">Defence</a></li>
+              <li><a href="Overperformers">Overperformers</a></li>
+              <li><a href="Underperformers">Underperformers</a></li>
+              <li class="last"><a href="Best Rated">Best Rated</a></li>
+            </ul>
+          </li>
+          <li> 
+            <!-- First Tier Drop Down -->
+            <label for="drop-2" class="toggle">Teams▾</label>
+            <a href="#" class="teams">Teams▾</a>
+            <input type="checkbox" id="drop-2">
+            <ul>
+              <li class="first"><a href="Attacking">Attacking</a></li>
+              <li><a href="Scoring Means">Ways of Scoring</a></li>
+              <li><a href="Squads">Squads</a></li>
+              <li><a href="H2H">Head To Head</a></li>
+              <li><a href="Title Race">Title Race</a></li>
+              <li class="last"><a href="Team Ratings">Team Ratings</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+        <section class="header">
+            <div class="container">
+                <h1>Worst Underperformers</h1>
+            </div>
+            <p>Players Who Are Consistently Performing Below Their Skill Level This Season</p>
+        </section>
+            <section class="section">
+                <div class="container", style='overflow-x: auto'>
+                  <table border="1" class="dfdata">
+                    <tr>
+                        
+                        <th></th>
+                        
+                        <th>Team</th>
+                        
+                        <th>Player</th>
+                        
+                        <th>Position</th>
+                        
+                        <th>Age</th>
+                        
+                        <th>Skill</th>
+                        <th>SQs</th>
+                        <th>Worst Performance</th>
+                        <th>Avg. Under Performance</th>
+   
+                    </tr>
+
+                        
+                        <tr>
+                        <td class="odd">1</td>
+                        <td class="odd">Atletico Atalanta</td>
+                        <td class="odd">Willy Nehring</td>
+                        <td class="odd">M</td>
+                        <td class="odd">34</td>
+                        <td class="odd">16</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/allround.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/freekicks.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">8   (-8)</td>
+                        <td class="odd">-4.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">2</td>
+                        <td class="even">Retribution FC</td>
+                        <td class="even">Gláucio Nabeiro</td>
+                        <td class="even">M</td>
+                        <td class="even">33</td>
+                        <td class="even">16</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/heart.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/freekicks.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">8   (-8)</td>
+                        <td class="even">-3.67</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">3</td>
+                        <td class="odd">The Beliebers</td>
+                        <td class="odd">Humphrey Harlow</td>
+                        <td class="odd">M</td>
+                        <td class="odd">34</td>
+                        <td class="odd">17</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/freekicks.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/shooting.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">10   (-7)</td>
+                        <td class="odd">-3.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">4</td>
+                        <td class="even">Atletico Atalanta</td>
+                        <td class="even">Andres Sarabia</td>
+                        <td class="even">D</td>
+                        <td class="even">32</td>
+                        <td class="even">14</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/genius.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/crossing.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">10   (-4)</td>
+                        <td class="even">-3.0</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">5</td>
+                        <td class="odd">Atletico Atalanta</td>
+                        <td class="odd">Steve Herriot</td>
+                        <td class="odd">M</td>
+                        <td class="odd">31</td>
+                        <td class="odd">15</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/shooting.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">8   (-7)</td>
+                        <td class="odd">-2.8</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">6</td>
+                        <td class="even">Iwobi Kenobi</td>
+                        <td class="even">Stanley Alker</td>
+                        <td class="even">D</td>
+                        <td class="even">33</td>
+                        <td class="even">16</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/heart.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/cool.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/crossing.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/shooting.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">10   (-6)</td>
+                        <td class="even">-2.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">7</td>
+                        <td class="odd">Disciple This</td>
+                        <td class="odd">Spence Bixby</td>
+                        <td class="odd">M</td>
+                        <td class="odd">34</td>
+                        <td class="odd">18</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/shooting.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">13   (-5)</td>
+                        <td class="odd">-2.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">8</td>
+                        <td class="even">The Beliebers</td>
+                        <td class="even">Leon Richèl</td>
+                        <td class="even">M</td>
+                        <td class="even">30</td>
+                        <td class="even">16</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/quick.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">11   (-5)</td>
+                        <td class="even">-2.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">9</td>
+                        <td class="odd">Retribution FC</td>
+                        <td class="odd">Terrance McLaren</td>
+                        <td class="odd">GK</td>
+                        <td class="odd">31</td>
+                        <td class="odd">15</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">11   (-4)</td>
+                        <td class="odd">-2.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">10</td>
+                        <td class="even">Oompa-Loompas</td>
+                        <td class="even">Jon Hope</td>
+                        <td class="even">M</td>
+                        <td class="even">32</td>
+                        <td class="even">14</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/legend.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">10   (-4)</td>
+                        <td class="even">-2.0</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">11</td>
+                        <td class="odd">Retribution FC</td>
+                        <td class="odd">Ichwan Toar</td>
+                        <td class="odd">M</td>
+                        <td class="odd">31</td>
+                        <td class="odd">15</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">11   (-4)</td>
+                        <td class="odd">-2.0</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">12</td>
+                        <td class="even">Xarmageddon</td>
+                        <td class="even">Mateus Santos</td>
+                        <td class="even">M</td>
+                        <td class="even">29</td>
+                        <td class="even">14</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">11   (-3)</td>
+                        <td class="even">-2.0</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">13</td>
+                        <td class="odd">Disciple This</td>
+                        <td class="odd">Exequiel Castellón</td>
+                        <td class="odd">D</td>
+                        <td class="odd">31</td>
+                        <td class="odd">19</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">16   (-3)</td>
+                        <td class="odd">-1.83</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">14</td>
+                        <td class="even">Retribution FC</td>
+                        <td class="even">Deane Beasant</td>
+                        <td class="even">D</td>
+                        <td class="even">32</td>
+                        <td class="even">15</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">12   (-3)</td>
+                        <td class="even">-1.83</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">15</td>
+                        <td class="odd">Oceans XI</td>
+                        <td class="odd">Giljan Chetcuti</td>
+                        <td class="odd">F</td>
+                        <td class="odd">30</td>
+                        <td class="odd">14</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/legend.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/cool.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/endurance.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">10   (-4)</td>
+                        <td class="odd">-1.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">16</td>
+                        <td class="even">Atletico Atalanta</td>
+                        <td class="even">Manolo Aguinaga</td>
+                        <td class="even">GK</td>
+                        <td class="even">17</td>
+                        <td class="even">5</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">3   (-2)</td>
+                        <td class="even">-1.17</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">17</td>
+                        <td class="odd">Atletico Atalanta</td>
+                        <td class="odd">Gunnar Hjartarson</td>
+                        <td class="odd">F</td>
+                        <td class="odd">33</td>
+                        <td class="odd">15</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">12   (-3)</td>
+                        <td class="odd">-1.17</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">18</td>
+                        <td class="even">Disciple This</td>
+                        <td class="even">Gualter Espada</td>
+                        <td class="even">M</td>
+                        <td class="even">29</td>
+                        <td class="even">17</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/legend.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">12   (-5)</td>
+                        <td class="even">-1.0</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">19</td>
+                        <td class="odd">Retribution FC</td>
+                        <td class="odd">Vasile Ivãnescu</td>
+                        <td class="odd">M</td>
+                        <td class="odd">33</td>
+                        <td class="odd">9</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/heart.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/endurance.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">8   (-1)</td>
+                        <td class="odd">-1.0</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">20</td>
+                        <td class="even">Atletico Atalanta</td>
+                        <td class="even">Mathias Kaljord</td>
+                        <td class="even">M</td>
+                        <td class="even">20</td>
+                        <td class="even">8</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/heart.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/header.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">6   (-2)</td>
+                        <td class="even">-1.0</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">21</td>
+                        <td class="odd">Xarmageddon</td>
+                        <td class="odd">Masoud Arfan</td>
+                        <td class="odd">M</td>
+                        <td class="odd">33</td>
+                        <td class="odd">16</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/legend.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">14   (-2)</td>
+                        <td class="odd">-1.0</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">22</td>
+                        <td class="even">Retribution FC</td>
+                        <td class="even">Jordi Cienfuegos</td>
+                        <td class="even">M</td>
+                        <td class="even">29</td>
+                        <td class="even">15</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">13   (-2)</td>
+                        <td class="even">-0.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">23</td>
+                        <td class="odd">Oompa-Loompas</td>
+                        <td class="odd">Adrian Collén</td>
+                        <td class="odd">M</td>
+                        <td class="odd">29</td>
+                        <td class="odd">8</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/genius.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/header.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/goalinstinct.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">7   (-1)</td>
+                        <td class="odd">-0.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">24</td>
+                        <td class="even">Atletico Atalanta</td>
+                        <td class="even">Pärtel Elts</td>
+                        <td class="even">D</td>
+                        <td class="even">17</td>
+                        <td class="even">5</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/goalinstinct.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">3   (-2)</td>
+                        <td class="even">-0.5</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">25</td>
+                        <td class="odd">Oceans XI</td>
+                        <td class="odd">Gonçalo Aguiar</td>
+                        <td class="odd">GK</td>
+                        <td class="odd">37</td>
+                        <td class="odd">16</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/heart.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/allround.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">14   (-2)</td>
+                        <td class="odd">-0.33</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">26</td>
+                        <td class="even">Retribution FC</td>
+                        <td class="even">Jalen Hartnell</td>
+                        <td class="even">D</td>
+                        <td class="even">29</td>
+                        <td class="even">15</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">12   (-3)</td>
+                        <td class="even">-0.33</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="odd">27</td>
+                        <td class="odd">Win-strain</td>
+                        <td class="odd">Jonny Clevan</td>
+                        <td class="odd">D</td>
+                        <td class="odd">33</td>
+                        <td class="odd">18</td>
+                        <td class="odd">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/heart.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/allround.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Blank.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="odd">15   (-3)</td>
+                        <td class="odd">-0.17</td>
+                        </tr>
+                    
+                        <tr>
+                        <td class="even">28</td>
+                        <td class="even">Atletico Atalanta</td>
+                        <td class="even">Hugh Scyles</td>
+                        <td class="even">D</td>
+                        <td class="even">35</td>
+                        <td class="even">16</td>
+                        <td class="even">
+                          <div class="container" id="sq">
+                            
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                                <img src="static/Images/Grey.png" width='20' height='20' alt='g'>
+                            
+
+                          
+                          </div>
+                        </td>
+                        <td class="even">11   (-5)</td>
+                        <td class="even">-0.17</td>
+                        </tr>
+                    
+                  </table>
+                </div>
+            </section>
+    </body>
+
+    <script src="static/xpert.js"></script>
+</body>
+</html>
